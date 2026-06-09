@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Создание объявления</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header class="header">
+    <div class="logo-box">
+        <img src="images/logo.png" class="logo" alt="Логотип">
+        <h1>Агентство недвижимости</h1>
+    </div>
+
+    <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="create.html">Добавить объявление</a>
+        <a href="admin.html">Админ</a>
+        <a href="auth.html">Войти</a>
+    </nav>
+</header>
+
+
+<div class="form-block">
+
+<h2>Создание объявления</h2>
+
+<input type="text" id="title" placeholder="Название">
+
+<input type="number" id="price" placeholder="Цена">
+
+<select id="type">
+<option>Квартира</option>
+<option>Дом</option>
+<option>Офис</option>
+</select>
+
+<textarea rows="5" placeholder="Описание"></textarea>
+
+<button onclick="createAd()">Создать</button>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

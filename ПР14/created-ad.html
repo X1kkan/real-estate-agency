@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Объявление</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header class="header">
+    <div class="logo-box">
+        <img src="images/logo.png" class="logo" alt="Логотип">
+        <h1>Агентство недвижимости</h1>
+    </div>
+
+    <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="create.html">Добавить объявление</a>
+        <a href="admin.html">Админ</a>
+        <a href="auth.html">Войти</a>
+    </nav>
+</header>
+
+
+<div class="container">
+
+<div class="card">
+
+<img src="images/home1.jpg">
+
+<h2 id="title"></h2>
+
+<p id="type"></p>
+
+<p id="price"></p>
+
+</div>
+
+</div>
+
+<script>
+document.getElementById('title').textContent = localStorage.getItem('title');
+document.getElementById('type').textContent = localStorage.getItem('type');
+document.getElementById('price').textContent = localStorage.getItem('price') + ' ₸';
+</script>
+
+</body>
+</html>
